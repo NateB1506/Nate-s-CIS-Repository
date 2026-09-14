@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P4"/>
+        <attribute name="authors" value="natha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-13 11:47:12 PM"/>
+        <attribute name="created" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6Mzc6NDIgUE07Mjg1Mw=="/>
+        <attribute name="edited" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6NDc6MTIgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <declare name="model" type="String" array="False" size=""/>
+            <declare name="msrp" type="Real" array="False" size=""/>
+            <declare name="discountPercent" type="Real" array="False" size=""/>
+            <declare name="amountOff" type="Real" array="False" size=""/>
+            <declare name="discountedPrice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter auto make: &quot;" newline="True"/>
+            <input variable="make"/>
+            <output expression="&quot;Enter auto model: &quot;" newline="True"/>
+            <input variable="model"/>
+            <output expression="&quot;Enter MSRP amount: &quot;" newline="True"/>
+            <input variable="msrp"/>
+            <output expression="&quot;Enter discount percent as a decimal: &quot;" newline="True"/>
+            <input variable="discountPercent"/>
+            <assign variable="amountOff" expression="msrp * discountPercent"/>
+            <assign variable="discountedPrice" expression="msrp - amountOff"/>
+            <output expression="&quot;Vehicle: &quot; &amp; make &amp; &quot; &quot; &amp; model &amp; &quot; | MSRP: $&quot; &amp; ToFixed(msrp, 2) &amp; &quot; | Discount: &quot; &amp; ToFixed(discountPercent * 100, 1) &amp; &quot;% | Amount Off: $&quot; &amp; ToFixed(amountOff, 2) &amp; &quot; | Final Price: $&quot; &amp; ToFixed(discountedPrice, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

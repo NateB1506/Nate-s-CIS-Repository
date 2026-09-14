@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P5"/>
+        <attribute name="authors" value="natha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-13 11:52:14 PM"/>
+        <attribute name="created" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6NDg6MjEgUE07Mjg1Mg=="/>
+        <attribute name="edited" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6NTI6MTQgUE07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <declare name="piValue" type="Real" array="False" size=""/>
+            <assign variable="piValue" expression="3.14"/>
+            <output expression="&quot;Enter radius of the circle: &quot;" newline="True"/>
+            <input variable="radius"/>
+            <assign variable="area" expression="piValue * radius * radius"/>
+            <assign variable="perimeter" expression="2 * piValue * radius"/>
+            <output expression="&quot;Area: &quot; &amp; ToFixed(area, 2) &amp; &quot; | Perimeter: &quot; &amp; ToFixed(perimeter, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

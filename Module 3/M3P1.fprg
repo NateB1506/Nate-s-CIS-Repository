@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P1"/>
+        <attribute name="authors" value="natha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-13 11:17:04 PM"/>
+        <attribute name="created" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTA6Mjc6MzIgUE07Mjg1MA=="/>
+        <attribute name="edited" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6MTc6MDQgUE07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ticker" type="String" array="False" size=""/>
+            <declare name="shares" type="Real" array="False" size=""/>
+            <declare name="costPerShare" type="Real" array="False" size=""/>
+            <declare name="amountInvested" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the stock ticker symbol:&quot;" newline="True"/>
+            <input variable="ticker"/>
+            <output expression="&quot;Enter the number of shares:&quot;" newline="True"/>
+            <input variable="shares"/>
+            <output expression="&quot;Enter the cost per share:&quot;" newline="True"/>
+            <input variable="costPerShare"/>
+            <assign variable="amountInvested" expression="shares * costPerShare"/>
+            <output expression="&quot;Stock: &quot; &amp; ticker &amp; &quot; | Total amount invested: $&quot; &amp; ToFixed(amountInvested, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

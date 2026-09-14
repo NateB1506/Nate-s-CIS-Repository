@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P2"/>
+        <attribute name="authors" value="natha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-13 11:25:34 PM"/>
+        <attribute name="created" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6MTg6MjIgUE07Mjg1MA=="/>
+        <attribute name="edited" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6MjU6MzQgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastName" type="String" array="False" size=""/>
+            <declare name="midterm" type="Real" array="False" size=""/>
+            <declare name="finalExam" type="Real" array="False" size=""/>
+            <declare name="totalExamPoints" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter student last name:&quot;" newline="True"/>
+            <input variable="lastName"/>
+            <output expression="&quot;Enter midterm exam score (0-100):&quot;" newline="True"/>
+            <input variable="midterm"/>
+            <output expression="&quot;Enter final exam score (0-100):&quot;" newline="True"/>
+            <input variable="finalExam"/>
+            <assign variable="totalExamPoints" expression="(0.40 * midterm) + (0.60 * finalExam)"/>
+            <output expression="&quot;Student: &quot; &amp; lastName &amp; &quot; | Total Exam Points: &quot; &amp; ToFixed(totalExamPoints, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

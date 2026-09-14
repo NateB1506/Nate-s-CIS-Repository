@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P3"/>
+        <attribute name="authors" value="natha"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-13 11:35:46 PM"/>
+        <attribute name="created" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6MzI6MTAgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="bmF0aGE7REVTS1RPUC1CSUw2REsxOzIwMjYtMDktMTM7MTE6MzU6NDYgUE07MTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalAmount" type="Real" array="False" size=""/>
+            <declare name="amountPerPerson" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter total amount recieved: &quot;" newline="True"/>
+            <input variable="totalAmount"/>
+            <assign variable="amountPerPerson" expression="totalAmount / 3"/>
+            <output expression="&quot;Each person receives: $&quot; &amp; ToFixed(amountPerPerson, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
